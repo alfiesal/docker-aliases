@@ -19,6 +19,9 @@ alias dip="docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
 # Remove all images
 alias drmi = "docker rmi $(docker images -q)"
 
+# Remove dangling images
+alias drmig = "docker images prune"
+
 # Remove all containers
 alias drm = "docker rm $(docker ps -qa)"
 
